@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+<html>
+  <head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Macrodiario App</title>
+
+
+
+
+   
     <!-- favicon icon path -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" type="image/x-icon">
     <!-- css framework -->
@@ -25,8 +29,6 @@
     <link rel="canonical" href="https://macrodiario.com/">
     <meta property="og:url" content="https://macrodiario.com/" />
     <meta property="og:type" content="website" />
-    <!-- google search console -->
-    <meta name="google-site-verification" content="ej_URcF5hOuqHWi5q9SHBLpp7y6qbTb8GF8emRngaGY" />
     <!-- title -->
     <title>Macro Diario</title>
 
@@ -46,24 +48,65 @@
     }
 </script>
 
-</head>
-<body>
-    <section id="intro_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="app_intro">
-                        <p>I will display &#8594;</p>
-                       <h1>Macro Diario</h1>
-                    </div>           
-                </div>
-                <div class="col-md-6">
-                    <div class="app_image">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
+
+
+
+
+
+
+    <style>
+      body {
+        background-color: rgba(183, 226, 111, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1,
+      p {
+        text-align: center;
+      }
+      .link-container {
+        display: flex;
+        justify-content: center;
+      }
+      .link-container a {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=com.macrodiario2";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href =
+          "https://apps.apple.com/es/app/macro-diario/id6451408746";
+      }
+    </script>
+    <img src="img/logo.png" alt="Macrodiario para iOS" height="250" />
+    <h1>Macro Diario</h1>
+      <br/>
+
+    <div class="link-container">
+      <a href="https://play.google.com/store/apps/details?id=com.macrodiario2">
+        <img src="img/android.svg" alt="Macrodiario para Android" width="150" />
+      </a>
+      <a href="https://apps.apple.com/es/app/macro-diario/id6451408746">
+        <img src="img/ios.svg" alt="Macrodiario para iOS" width="150" />
+      </a>
+    </div>
+    <div>
+      <p>O</p>
+    </div>
+    <div>
+      <img src="img/qr.png" alt="Macrodiario para iOS" height="150" />
+    </div>
+  </body>
 </html>
