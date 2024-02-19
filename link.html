@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Macrodiario App</title>
+  </head>
+  <body>
+    <script>
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=com.macrodiario2";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href =
+          "https://apps.apple.com/es/app/macro-diario/id6451408746";
+      } else {
+        window.location.href =
+          "https://macrodiario.com";
+	  }
+    </script>
+  </body>
+</html>
