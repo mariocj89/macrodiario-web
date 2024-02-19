@@ -16,6 +16,23 @@ function navToggle() {
 } 
 
 
+// scroll top
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopBtn.style.display = "block";
+      } else {
+          scrollTopBtn.style.display = "none";
+      }
+  });
+
+  scrollTopBtn.addEventListener("click", function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  });
+});
 
 
 // Auto,HandSwipe,dotted,next_preview icon reviews slider
@@ -64,3 +81,26 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// testimonials
+$(function() {
+  
+  
+  $('.slide-one-item').owlCarousel({
+      center: false,
+      autoplayHoverPause: true,
+      items: 1,
+      loop: true,
+      stagePadding: 0,
+      margin: 0,
+      smartSpeed: 1500,
+      autoplay: true,
+      pauseOnHover: false,
+      dots: true,
+      nav: true,
+      navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+  });
+  
+  
+  })

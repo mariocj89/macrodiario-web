@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
      <!-- css framework -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- owl css -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    
+
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/main.css">
 
@@ -32,7 +37,7 @@
     <!-- title -->
     <title>Macro Diario</title>
 
-
+    
 
   <script type="application/ld+json">
     {
@@ -47,20 +52,14 @@
         ]
     }
 </script>
-
 </head>
-
-
 
 <body>
 
-  
 
 
-
-
-
-    <section class="intro_area">
+<!------------------------------------------------------- app intro -------------------------------------------->
+  <section class="intro_area">
         <div class="container">
             <div class="Header">
                 <header class="header">
@@ -74,10 +73,10 @@
                             </button>
                             <nav class="nav">
                                <ul class="pt-3">
-                                  <li><a href="index.html">Reseñas</a></li>
-                                  <li><a href="project.html">Cómo funciona</a></li>
-                                  <li><a href="blog.html">Apps</a></li>
-                                  <li><a href="contact.html">Q&A</a></li>
+                                  <li><a href="#reviews">Reviews</a></li>
+                                  <li><a href="#instructions">Instructions</a></li>
+                                  <li><a href="#testimonials">Testimonials</a></li>
+                                  <li><a href="#qna">QNA</a></li>
                                </ul>
                             </nav>
                         </div>
@@ -87,14 +86,16 @@
             <div class="row align-items-center flex-column-reverse flex-md-row content_app">
                 <div class="col-md-6">
                     <div class="app_intro pt-2">
-                        <h6> &#8594; Simplifica tu viaje hacia la salud con Macro Diario </h6>
+                        <h6> &#8594; Simplifique su viaje hacia la salud con Macro Diario </h6>
                        <h1>Macro Diario</h1>
                        <h3>Salud en tus manos</h3>
                        <p class="my-3">Macro Diario simplifica el seguimiento de tus macronutrientes sin códigos de barras ni complicaciones. Logra fácilmente tus metas de bienestar y composición corporal con esta aplicación eficaz y sencilla.</p>
                     </div> 
                    
-                    <a href="https://play.google.com/store/apps/details?id=com.macrodiario2"><img src="img/android.svg" style="width: 200px;"></a>
-                    <a href="https://apps.apple.com/es/app/macro-diario/id6451408746"><img src="img/ios.svg" style="width: 200px;"></a>
+                    <div class="apps_link">
+                      <a href="https://play.google.com/store/apps/details?id=com.macrodiario2"><img src="assets/images/android.svg" alt=""></a>
+                      <a class="ps-3" href="https://apps.apple.com/es/app/macro-diario/id6451408746"><img src="assets/images/ios.svg" alt=""></a>
+                    </div>
                              
                 </div>
                 <div class="col-md-6">
@@ -105,16 +106,14 @@
                 </div>
             </div>
         </div>
-    </section>
+  </section>
 
 
-
-
-    <section>
-        <div class="reviews">
+<!------------------------------------------------------ Reviews slider ---------------------------------------->
+  <section>
+        <div class="reviews" id="reviews">
             <div class="container">
-<!-- Slideshow container -->
-<div class="slideshow-container"> 
+   <div class="slideshow-container"> 
     <div class="rating text-center">
         <i class="fa-sharp fa-solid fa-star"></i>
         <i class="fa-sharp fa-solid fa-star"></i>
@@ -125,7 +124,7 @@
      <div class="common_title text-center py-4">
        <h1>Reseñas de usuarios</h1>
      </div>
-    <!-- Full-width slides/quotes -->
+    <!-- slides/quotes -->
     <div class="mySlides">
       <q>Muy sencilla y fácil de usar. Llevo un mes usándola y me ayuda a comer mejor.</q>
       <p class="author">- David Naranjo</p>
@@ -148,7 +147,7 @@
       <q>Uso la app todos los dias, ha cambiado mi forma de comer.</q>
       <p class="author">- Victoria Romero</p>
     </div>
-
+   
   
 
     <!-- Next/prev buttons -->
@@ -166,10 +165,11 @@
   </div>
         </div>
         </div>
-    </section>
+  </section>
 
 
-  <section>
+<!------------------------------------------------------ app Instructions 1 ----------------------------------->
+  <section id="instructions">
     <div class="app_info">
       <div class="container">
         <div class="common_title text-center py-5">
@@ -196,6 +196,9 @@
       </div>
     </div>
   </section>
+
+
+<!------------------------------------------------------ app Instructions 2 ------------------------------------->  
   <section>
     <div class="container">
       <div class="row align-items-center flex-column-reverse flex-md-row">
@@ -218,6 +221,7 @@
   </section>
 
 
+<!------------------------------------------------------ app Instructions 3 ------------------------------------->
   <section>
     <div class="app_info">
       <div class="container">
@@ -244,72 +248,22 @@
   </section>
 
 
+<!------------------------------------------------------ app Instructions 4 -------------------------------------->
   <section>
-    <div class="faq mt-5 py-5">
-      <div class="common_title text-center pb-4">
-        <h1 style="color:#fff;">Q&A</h1>
-      </div>
-      <div class="container">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse flex-md-row">
+        <div class="col-md-6 mt-4">
+          <div class="common_title">
+              <div class="txt-right">
+                <h1><span style="color:#0066EE">4</span></h1>
+                <h1>Supérate</h1>
+                <p>Lleva un control de <br> tus objetivos</p>
               </div>
-            </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="app_info_img top-spance">
+            <img class="img-fluid" src="assets/images/app_mockub_2.png" alt="">
           </div>
         </div>
       </div>
@@ -317,22 +271,200 @@
   </section>
 
 
+<!------------------------------------------------------- professional opinions sections------------------------------------->
+ <section id="testimonials">
+  <div class="content">
+    <div class="container">
+      <div class="common_title text-center pb-5">
+        <h1>Opiniones de profesionales</h1></div>
+      <div class="owl-carousel slide-one-item">
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('assets/images/1.png');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
 
+              <div class="author2">&mdash; Craig Stephen</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
+
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('assets/images/2.png');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
+
+              <div class="author2">&mdash; Craig Stephen</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('assets/images/2.png');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
+
+              <div class="author2">&mdash; Craig Stephen</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('assets/images/2.png');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
+
+              <div class="author2">&mdash; Craig Stephen</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('assets/images/2.png');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
+
+              <div class="author2">&mdash; Craig Stephen</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
+      </div>
+    </div>
+  </div>
+ </section>
+   
+ 
+<!------------------------------------------------------ trusted by section------------------------------------------------------>
+ <section>
+  <div class="trusted">
+    <div class="container">
+      <div class="common_title text-center py-5">
+        <h1>Avalado por</h1>
+        <img class="img-fluid mt-3" src="assets/images/trusted_by.png" alt="Trusted">
+      </div>
+    </div>
+  </div>
+ </section>
  
 
- 
+<!-------------------------------------------------------------QNA sections-------------------------------------------->
+<section id="qna">
+  <div class="faq mt-5 py-5">
+    <div class="common_title text-center pb-4">
+      <h1 style="color:#fff;">Q&A</h1>
+    </div>
+    <div class="container">
+      <div class="accordion pb-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at corporis molestiae nam natus dicta voluptates numquam praesentium nemo distinctio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+
+
+<!---------------------------------------------------------- footer  ----------------------------------------------------------->
+<footer style="background-color: #151824; color:#c7c5c5e0;border-top:1px solid gray;">
+  <div class="container">
+    <button id="scrollTopBtn" title="Go to top">&#9650;</button>
+    <div class="footer_content py-5" >
+     <div class="row">
+      <div class="col-md-5 ">
+        <div class="copyright">
+          Copyright &#169; 2024 Macro Diario | All Rights Reserved
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="footer_social_icons">
+           <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+           <a href=""> <i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+       <div class="policy_link">
+        <a href="">Contact Us</a>
+        <a class="ps-2" href="">Privacy Policy</a>
+       </div>
+      </div>
+     </div>
+
+    </div>
+  </div>
+</footer>
+
+     <!-- jQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="assets/js/owl.carousel.min.js"></script>
      <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Other head elements -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-   
     <!-- custom js -->
     <script src="assets/js/custom.js"></script>
-
-
 
 </body>
 </html>
