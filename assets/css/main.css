@@ -45,10 +45,6 @@ body {
 }
 
 /*-------------------------------------------------------------- header css ------------------------------------------------*/
-.header {
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
-}
 
 .inner_container {
   display: flex;
@@ -172,7 +168,7 @@ body {
   background: linear-gradient(200deg, #0066ee 60%, #9383fb 100%);
   color: #fff;
   padding-top: 20px;
-  height: 100vh;
+  padding-bottom: 22vh;
 }
 .app_intro h6 {
   color: #b7e26f;
@@ -292,13 +288,16 @@ q {
   font-size: 14px;
   padding-top: 10px;
 }
-
+/*-------------------------------------------------- app instructions css ------------------------------------*/
 .inner_content {
   text-align: left;
   padding-left: 50px;
 }
 .inner_content span {
   font-size: 50px;
+}
+.border-aera img{
+  border-radius: 20px;
 }
 .txt-right span {
   font-size: 50px;
@@ -333,6 +332,7 @@ q {
   .testimony-29101 .image {
     height:310px;
   }
+
 }
 
 .testimony-29101 .text {
@@ -428,6 +428,7 @@ q {
   background: #007bff;
 }
 
+
 /*----------------------------------------------------- QNA -----------------------------------------------------*/
 .faq {
   background: #151824;
@@ -491,6 +492,9 @@ button.accordion-button,
 /*----------------------------------------------------- main responsive css ---------------------------------------------*/
 
 @media (max-width: 991px) {
+  .intro_area {
+    padding-bottom:40px;
+  }
   .app_image {
     margin: 0 auto;
     width: 300px;
@@ -498,6 +502,9 @@ button.accordion-button,
   }
   .content_app {
     padding-top: 3%;
+  }
+  .logo img{
+    width: 50px;
   }
   .app_intro h1 {
     font-size: 45px;
@@ -533,7 +540,7 @@ button.accordion-button,
 	text-align: center;
   }
   .apps_link img{
-    width: 32%;
+    width: 34%;
   }
   .policy_link{
     text-align: center;
