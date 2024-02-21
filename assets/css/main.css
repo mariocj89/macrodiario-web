@@ -302,9 +302,17 @@ q {
 .txt-right span {
   font-size: 50px;
 }
+
 .inner_content p {
   color: rgb(108, 108, 112);
   font-weight: 500;
+  width: 65%; /* set wrap width for desktop device 1 to 3 */
+}
+.txt-right p{
+  width: 100%; /* set wrap width for desktop device 2 to 4 */
+}
+.app_info_img img {
+  max-width: 70%; /* set app screnshots width for desktop*/
 }
 .top-spance {
   margin-top: -80px;
@@ -313,12 +321,20 @@ q {
 }
 .top-spance img {
   border-radius: 20px;
+ 
 }
 .txt-right {
   text-align: right;
   padding-right: 150px;
 }
-
+/*------------------------------------------------------ tursted css -----------------------------*/
+.trusted{
+background: #151824;
+color:#fff;
+}
+.trusted img{
+  border-radius: 25px;
+}
 /*------------------------------------------------------ professional customar quaots css -----------------------------*/
 .content{
 	padding: 50px 0px;
@@ -440,7 +456,7 @@ q {
   box-shadow: none;
 }
 .accordion-button:not(.collapsed) {
-  color: #0c63e4;
+  color: #151824;
   background-color: #e7f1ff;
   box-shadow: none;
 }
@@ -519,10 +535,26 @@ button.accordion-button,
     width: 70%;
     margin: 0 auto;
   }
+  .inner_content p {
+    width: 80%; /* set wrap width (app instruction p) for mobile device 1 to 3 */
+    margin:0 auto;
+  }
+
+  .txt-right p{
+    width:80%; /* set wrap width (app instruction p) for mobile device 2 to 4 */
+    margin:0 auto;
+  }
+  .app_info_img img {
+    max-width: 100%; /* set app screnshots width for mobile devices*/
+  }
+  .trusted img {
+    max-width: 70%;
+ }
   .common_title h1 {
     font-size: 32px;
     text-align: center;
   }
+
   .common_title p {
     text-align: center;
   }
@@ -543,6 +575,6 @@ button.accordion-button,
     width: 34%;
   }
   .policy_link{
-    text-align: center;
+    text-align: center !important;
   }
 }
