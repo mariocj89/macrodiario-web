@@ -329,8 +329,8 @@ q {
 }
 /*------------------------------------------------------ tursted css -----------------------------*/
 .trusted{
-background: #151824;
-color:#fff;
+background: #fff;
+/*color:#fff;*/
 }
 .trusted img{
   border-radius: 25px;
